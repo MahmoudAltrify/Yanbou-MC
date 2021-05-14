@@ -1,5 +1,5 @@
 /**
-* Template Name: Medilab - v4.2.0
+* Template Name: Yanbu-MC - v4.2.0
 * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -262,5 +262,18 @@
       once: true,
       mirror: false
     })
+  });
+
+  /*-----------------------------------------------------------------*/
+  /* Toggle
+   /*-----------------------------------------------------------------*/
+  $('.toggle-main .toggle:first-child').addClass('current').children('.toggle-content').css('display', 'block');
+  $('.toggle-title').click(function () {
+    var parent_toggle = $(this).closest('.toggle');
+    if (parent_toggle.hasClass('current')) {
+      parent_toggle.removeClass('current').children('.toggle-content').slideUp(300);
+    } else {
+      parent_toggle.addClass('current').children('.toggle-content').slideDown(300);
+    }
   });
 })()
