@@ -116,7 +116,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function() {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -244,14 +244,9 @@
       }
     }
   });
-
-  /**
-   * Initiate gallery lightbox
-   */
-  const galleryLightbox = GLightbox({
+  GLightbox({
     selector: '.gallery-lightbox'
   });
-
   /**
    * Animation on scroll
    */
