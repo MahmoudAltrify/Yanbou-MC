@@ -1238,7 +1238,7 @@ section {
 }
 
 .about .video-box {
-    background: url("../img/clinic.jpeg") center center no-repeat;
+    background: url("../img/main-page.jpeg") center center no-repeat;
     background-size: cover;
     min-height: 500px;
 }
